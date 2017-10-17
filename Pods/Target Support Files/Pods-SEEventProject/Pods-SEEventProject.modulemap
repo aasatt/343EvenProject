@@ -1,0 +1,6 @@
+framework module Pods_SEEventProject {
+  umbrella header "Pods-SEEventProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
