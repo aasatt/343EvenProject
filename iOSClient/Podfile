@@ -1,0 +1,20 @@
+project 'SEEventProject.xcodeproj'
+
+target 'SEEventProject' do
+  use_frameworks!
+  
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'PhoneNumberKit', :git => 'https://github.com/marmelroy/PhoneNumberKit.git'
+  pod 'SwiftyBeaver', :git => 'https://github.com/SwiftyBeaver/SwiftyBeaver.git'
+  pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit.git'
+  pod 'SVProgressHUD'
+  pod 'Networking', :git => 'https://github.com/3lvis/Networking.git'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'swift4'
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git'
+  pod 'GooglePlaces'
+  pod 'GoogleMaps'
+  pod 'DateToolsSwift'
+  pod 'Presentr', :git => 'https://github.com/IcaliaLabs/Presentr.git'
+end

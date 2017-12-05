@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Events</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="container">
+            <h1><u>Current Pending Event</u></h1>
+        <div id="firebase-container">
+            <div>
+                <span style="color:gray"><em>Submitted at: <span id="event__created-at"></span></em></span>
+            </div>
+            <div>
+                <h4 style="display:inline-block">Title:</h3>&nbsp;<span id="event__title"></span>
+            </div>
+            <div>
+                <h4 style="display:inline-block">Description:</h3>&nbsp;<span id="event__description"></span>
+            </div>
+            <div>
+                <h4 style="display:inline-block">Image URL:</h3>&nbsp;<span id="event__image-link"></span>
+            </div>
+            <div id="event__location"></div>
+            <div id="event__external-links"></div>
+             <div style="padding-top: 10px">
+            <button type="button" class="btn btn-success" id="firebase-approve">Approve</button>
+            <button type="button" class="btn btn-danger" id="firebase-reject">Reject</button>
+        </div>
+        </div>
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+            <script>
+              var config = {
+                apiKey: "AIzaSyApWCvsXKF4tARqhNfi_f33l9rKaOmkBwA",
+                databaseURL: "https://se-test-api.firebaseio.com",
+            };
+            firebase.initializeApp(config);
+            const database = firebase.database();
+            database.ref('events').once('value').then(function(snapshot) {
+                const pendingEvents = snapshot.val().pending;
+                const keys = pendingEvents ? Object.keys(pendingEvents) : [];
+                if (pendingEvents && keys.length > 0) {
+                    // just to match the picture better lol
+                    const firstKey = keys[0];
+                    const newObj = {
+                        [firstKey]: pendingEvents[firstKey],
+                    };
+                    const objWithoutKey = newObj[firstKey];
+                    console.log(newObj)
+                    document.getElementById("event__created-at").innerText = new Date(objWithoutKey.dateSubmitted * 1000);
+                    document.getElementById("event__title").innerText = objWithoutKey.title;
+                    document.getElementById("event__description").innerText = objWithoutKey.description;
+                    document.getElementById("event__image-link").innerHTML = `
+                        <a
+                            href="${objWithoutKey.imageUrl}"
+                            target="_blank">${objWithoutKey.imageUrl}</a>
+                    `;
+                    document.getElementById("event__location").innerHTML = `
+                        <h4>Location:</h4>
+                        <div>Coordinates: (${objWithoutKey.location.latitude}, ${objWithoutKey.location.longitude})</div>
+                        <div>Subtitle: ${objWithoutKey.location.subtitle}</div>
+                        <div>Title: ${objWithoutKey.location.title}</div>
+                    `;
+
+                    let externalLinksHTML = '';
+
+                    objWithoutKey.externalLinks.forEach(link => {
+                        console.log(link);
+                        externalLinksHTML += `
+                            <li class="list-group-item">
+                                <a href=${link.url} target="_blank">${link.title}</a>
+                            </li>
+                        `;
+                    });
+
+                    document.getElementById("event__external-links").innerHTML = `
+                        <h4>External Links:</h4>
+                        <ul class="list-group">
+                            ${externalLinksHTML}
+                        </ul>
+                    `;
+                    // define accept/reject fn's that are associated with this specific event
+                    function accept() {
+                        const newActiveEvent = {
+                            ...pendingEvents[firstKey],
+                            dateApproved: Date.now(),
+                        }
+                        const allActiveEvents = {
+                            ...snapshot.val().active,
+                            [firstKey]: newActiveEvent,
+                        }
+                        firebase.database().ref('events/active').set(allActiveEvents).then(event => {
+                            database.ref(`events/pending/${firstKey}`).remove().then(console.log);
+                            location.reload();
+                        })
+                    }
+            
+                    document.getElementById("firebase-approve").onclick = accept;
+                    document.getElementById("firebase-reject").onclick = reject;
+            
+                    function reject() {
+                        database.ref(`events/pending/${firstKey}`).remove().then(console.log);
+                        location.reload();
+                    }
+                } else {
+                    document.getElementById("firebase-container").innerHTML = "No more pending events!";
+                }
+            });
+        </script>
+        </div>
+    </body>
+</html>

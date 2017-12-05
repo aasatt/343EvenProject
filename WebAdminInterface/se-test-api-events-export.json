@@ -1,0 +1,58 @@
+{
+  "active" : {
+    "EEFA1248-C263-4D56-8E55-737CD49F5D3F" : {
+      "dateApproved" : 1514109562,
+      "dateSubmitted" : 1512109562,
+      "description" : "The House on Thursday passed a sweeping tax bill largely along party lines that makes good on a Republican campaign promise to reform the country’s tax code.",
+      "externalLinks" : [ {
+        "title" : "House passes Republican tax bill, future in Senate unclear",
+        "url" : "http://www.foxnews.com/politics/2017/11/16/house-passes-republican-tax-bill-future-remains-unclear-in-senate.html"
+      } ],
+      "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/se-test-api.appspot.com/o/photo-1496112872005-7bb0b50dad9c.jpeg?alt=media&token=d4d7af97-c7ff-4464-89b5-32375e1edafa",
+      "location" : {
+        "latitude" : 38.9072,
+        "longitude" : -77.0369,
+        "subtitle" : "United States",
+        "title" : "Washington, DC"
+      },
+      "title" : "House Passes Republican Tax Bill"
+    }
+  },
+  "pending" : {
+    "EEFo123213-C263-4D56-8E55-737CD49F5D3F" : {
+      "dateSubmitted" : 1512109562,
+      "description" : "Bobby says hello",
+      "externalLinks" : [ {
+        "title" : "Gal Gadot is Hot",
+        "url" : "http://www.foxnews.com/politics/2017/11/16/house-passes-republican-tax-bill-future-remains-unclear-in-senate.html"
+      }, {
+        "title" : "So is Scarlett Johansson",
+        "url" : "https://www.google.com"
+      } ],
+      "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/se-test-api.appspot.com/o/photo-1496112872005-7bb0b50dad9c.jpeg?alt=media&token=d4d7af97-c7ff-4464-89b5-32375e1edafa",
+      "location" : {
+        "latitude" : 38.9072,
+        "longitude" : -77.0369,
+        "subtitle" : "United States",
+        "title" : "Washington, DC"
+      },
+      "title" : "House Passes Republican Tax Bill"
+    },
+    "EEFo123213-C263-4D645757657656-8E55-737CD49F5D3F" : {
+      "dateSubmitted" : 1510866454,
+      "description" : "Bobby says hello... again...",
+      "externalLinks" : [ {
+        "title" : "Bobby bobby bobby",
+        "url" : "http://www.foxnews.com/politics/2017/11/16/house-passes-republican-tax-bill-future-remains-unclear-in-senate.html"
+      } ],
+      "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/se-test-api.appspot.com/o/photo-1496112872005-7bb0b50dad9c.jpeg?alt=media&token=d4d7af97-c7ff-4464-89b5-32375e1edafa",
+      "location" : {
+        "latitude" : 38.9072,
+        "longitude" : -77.0369,
+        "subtitle" : "United States",
+        "title" : "Washington, DC"
+      },
+      "title" : "House Passes Republican Tax Bill"
+    }
+  }
+}

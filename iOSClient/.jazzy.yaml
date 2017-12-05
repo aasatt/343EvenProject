@@ -1,0 +1,9 @@
+--- 
+author: "Aaron Satterfield"
+copyright: "© 2017. All Rights Reserved"
+exclude:
+
+min_acl: private
+sdk: 
+  - iphone
+skip_undocumented: false

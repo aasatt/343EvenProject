@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Session Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Session" class="dashAnchor"></a>
+    <a title="Session Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (49% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Session Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventCollectionViewCell.html">EventCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventHeaderView.html">EventHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventInfoViewController.html">EventInfoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventMessageTableViewCell.html">EventMessageTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventViewController.html">EventViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventsCollectionViewController.html">EventsCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationAutocompleteController.html">LocationAutocompleteController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainNavigationController.html">MainNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Session.html">Session</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignupViewController.html">SignupViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignupViewController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitEventFormController.html">SubmitEventFormController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitEventFormController/rows.html">– rows</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitNavigationController.html">SubmitNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeViewController.html">WelcomeViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject17GMSServicesAPIKeySSv">GMSServicesAPIKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject12PlacesAPIKeySSv">PlacesAPIKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject3log12SwiftyBeaverACCmv">log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIWindow.html">UIWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AbstractLocation.html">AbstractLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventInfoControllerDelegate.html">EventInfoControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationObserver.html">LocationObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationPickerDelegate.html">LocationPickerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DeviceToken.html">DeviceToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EventLocation.html">EventLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExternalLink.html">ExternalLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Session</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Session</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>User session used throught the application handles fetching data and updating models as well as keeping track of the current user</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC06sharedC0ACvZ"></a>
+                    <a name="//apple_ref/swift/Variable/sharedSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC06sharedC0ACvZ">sharedSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton instance of Session used throughout the application for various requests</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedSession</span> <span class="o">=</span> <span class="kt">Session</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC11currentUserAA0E0VSgv"></a>
+                    <a name="//apple_ref/swift/Property/currentUser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC11currentUserAA0E0VSgv">currentUser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current authenticated user of the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">currentUser</span><span class="p">:</span> <span class="kt"><a href="../Structs/User.html">User</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC7decoder10Foundation11JSONDecoderCv"></a>
+                    <a name="//apple_ref/swift/Property/decoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC7decoder10Foundation11JSONDecoderCv">decoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JSON Decoder used for session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">decoder</span> <span class="o">=</span> <span class="kt">JSONDecoder</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)Session(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)Session(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Session instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC010clearSavedC0yyF"></a>
+                    <a name="//apple_ref/swift/Method/clearSavedSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC010clearSavedC0yyF">clearSavedSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes user session from persistant storage</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">clearSavedSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC07restoreC0SbyF"></a>
+                    <a name="//apple_ref/swift/Method/restoreSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC07restoreC0SbyF">restoreSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retreives and restores persisted user Session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">restoreSession</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>whether or not Session has been restored successfully</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC10createUserySS3uid_SS11phoneNumberys5Error_pSgc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/createUser(uid:phoneNumber:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC10createUserySS3uid_SS11phoneNumberys5Error_pSgc10completiontF">createUser(uid:phoneNumber:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API call to create the current user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createUser</span><span class="p">(</span><span class="nv">uid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">phoneNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phoneNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the verfied phone number</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the name of the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning the newly authenticated user</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC7getUsery10Foundation4UUIDV2id_yAA0E0Vc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/getUser(id:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC7getUsery10Foundation4UUIDV2id_yAA0E0Vc10completiontF">getUser(id:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API call to create the current user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getUser</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">UUID</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Structs/User.html">User</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>id of the user to fetch</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning the requested user</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC6updateyAA4UserV4user_ySbc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/update(user:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC6updateyAA4UserV4user_ySbc10completiontF">update(user:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API call to update the current user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Structs/User.html">User</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>user object to update</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning if the update was successful or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC6updateyAA11DeviceTokenV6device_10Foundation4UUIDV3forySbc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/update(device:for:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC6updateyAA11DeviceTokenV6device_10Foundation4UUIDV3forySbc10completiontF">update(device:for:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API call to set or update device token of the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">device</span><span class="p">:</span> <span class="kt"><a href="../Structs/DeviceToken.html">DeviceToken</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt">UUID</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>device</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>device of the user with push token</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>id of user who the devices belongs to</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning if the update was successful or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC15getActiveEventsyySayAA5EventVGSgc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getActiveEvents(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC15getActiveEventsyySayAA5EventVGSgc10completion_tF">getActiveEvents(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets all active events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getActiveEvents</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Event.html">Event</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning active events</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC11submitEventyAA0E0V5event_ySbc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/submitEvent(event:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC11submitEventyAA0E0V5event_ySbc10completiontF">submitEvent(event:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Submits new user event for review</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">submitEvent</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Structs/Event.html">Event</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>event to submit</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning if the update was successful or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC17getArchivedEventsyySayAA5EventVGc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getArchivedEvents(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC17getArchivedEventsyySayAA5EventVGc10completion_tF">getArchivedEvents(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets all active events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getArchivedEvents</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Event.html">Event</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning archived or passed events</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC11getMessagesy10Foundation4UUIDV3for_ySayAA7MessageVGc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/getMessages(for:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC11getMessagesy10Foundation4UUIDV3for_ySayAA7MessageVGc10completiontF">getMessages(for:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets all messages for the event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getMessages</span><span class="p">(</span><span class="k">for</span> <span class="nv">eventId</span><span class="p">:</span> <span class="kt">UUID</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Message.html">Message</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>if of the event to get messages for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning event messages</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject7SessionC4sendyAA7MessageV7message_SS3forySbc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/send(message:for:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject7SessionC4sendyAA7MessageV7message_SS3forySbc10completiontF">send(message:for:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a new message to the event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Structs/Message.html">Message</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">eventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>message to send to the event</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>id of the event to send message to</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>async completion block returning message sent successfully</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017. All Rights Reserved</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

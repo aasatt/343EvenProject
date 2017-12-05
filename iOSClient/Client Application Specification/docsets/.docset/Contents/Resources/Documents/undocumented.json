@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/Application/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/Models/Location.swift",
+      "line": 38,
+      "symbol": "EventLocation.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/Models/Location.swift",
+      "line": 39,
+      "symbol": "EventLocation.subtitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/Models/User.swift",
+      "line": 17,
+      "symbol": "DeviceToken.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/Event/EventCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "EventCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/Event/EventsCollectionViewController.swift",
+      "line": 11,
+      "symbol": "reuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/Event/EventsCollectionViewController.swift",
+      "line": 13,
+      "symbol": "EventsCollectionViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 17,
+      "symbol": "SignupViewController.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 18,
+      "symbol": "SignupViewController.phoneTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 19,
+      "symbol": "SignupViewController.codeTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 20,
+      "symbol": "SignupViewController.nextButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 21,
+      "symbol": "SignupViewController.doneButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 53,
+      "symbol": "SignupViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 75,
+      "symbol": "SignupViewController.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/SignupViewController.swift",
+      "line": 87,
+      "symbol": "SignupViewController.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/WelcomeViewController.swift",
+      "line": 14,
+      "symbol": "WelcomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/WelcomeViewController.swift",
+      "line": 19,
+      "symbol": "WelcomeViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronsatterfield/Desktop/SEEventProject/SEEventProject/User Interface/WelcomeViewController.swift",
+      "line": 24,
+      "symbol": "WelcomeViewController.actionSignup()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/aaronsatterfield/Desktop/SEEventProject"
+}

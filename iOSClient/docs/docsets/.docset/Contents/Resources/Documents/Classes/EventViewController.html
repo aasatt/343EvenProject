@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EventViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EventViewController" class="dashAnchor"></a>
+    <a title="EventViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (49% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EventViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventCollectionViewCell.html">EventCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventHeaderView.html">EventHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventInfoViewController.html">EventInfoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventMessageTableViewCell.html">EventMessageTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventViewController.html">EventViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventsCollectionViewController.html">EventsCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationAutocompleteController.html">LocationAutocompleteController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainNavigationController.html">MainNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Session.html">Session</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignupViewController.html">SignupViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignupViewController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitEventFormController.html">SubmitEventFormController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitEventFormController/rows.html">– rows</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubmitNavigationController.html">SubmitNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeViewController.html">WelcomeViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject17GMSServicesAPIKeySSv">GMSServicesAPIKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject12PlacesAPIKeySSv">PlacesAPIKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:14SEEventProject3log12SwiftyBeaverACCmv">log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIWindow.html">UIWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AbstractLocation.html">AbstractLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventInfoControllerDelegate.html">EventInfoControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationObserver.html">LocationObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationPickerDelegate.html">LocationPickerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DeviceToken.html">DeviceToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EventLocation.html">EventLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExternalLink.html">ExternalLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EventViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">EventViewController</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Detail view controller for a specific event</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC5eventAA0C0Vv"></a>
+                    <a name="//apple_ref/swift/Property/event" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC5eventAA0C0Vv">event</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Structs/Event.html">Event</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC8messagesSayAA7MessageVGv"></a>
+                    <a name="//apple_ref/swift/Property/messages" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC8messagesSayAA7MessageVGv">messages</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Message.html">Message</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC17databaseReferenceSo08DatabaseG0Cv"></a>
+                    <a name="//apple_ref/swift/Property/databaseReference" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC17databaseReferenceSo08DatabaseG0Cv">databaseReference</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">databaseReference</span> <span class="o">=</span> <span class="kt">Database</span><span class="o">.</span><span class="nf">database</span><span class="p">()</span><span class="o">.</span><span class="nf">reference</span><span class="p">()</span><span class="o">.</span><span class="nf">child</span><span class="p">(</span><span class="s">"messages"</span><span class="p">)</span><span class="o">.</span><span class="nf">child</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n"><a href="../Classes/EventViewController.html#/s:14SEEventProject19EventViewControllerC5eventAA0C0Vv">event</a></span><span class="o">.</span><span class="n">id</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC9textFieldSo06UITextG0Cv"></a>
+                    <a name="//apple_ref/swift/Property/textField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC9textFieldSo06UITextG0Cv">textField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Text field in the bottom toolbar that a message can be entered to</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC012toolbarStackD0So07UIStackD0Cv"></a>
+                    <a name="//apple_ref/swift/Property/toolbarStackView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC012toolbarStackD0So07UIStackD0Cv">toolbarStackView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">toolbarStackView</span><span class="p">:</span> <span class="kt">UIStackView</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC10sendButtonSo8UIButtonCv"></a>
+                    <a name="//apple_ref/swift/Property/sendButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC10sendButtonSo8UIButtonCv">sendButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">sendButton</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC05tableD0So07UITableD0Cv"></a>
+                    <a name="//apple_ref/swift/Property/tableView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC05tableD0So07UITableD0Cv">tableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC9presenter8PresentrAECv"></a>
+                    <a name="//apple_ref/swift/Property/presenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC9presenter8PresentrAECv">presenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt">Presentr</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC9inputItemSo011UIBarButtonG0Cv"></a>
+                    <a name="//apple_ref/swift/Property/inputItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC9inputItemSo011UIBarButtonG0Cv">inputItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">inputItem</span> <span class="o">=</span> <span class="kt">UIBarButtonItem</span><span class="p">(</span><span class="nv">customView</span><span class="p">:</span> <span class="n"><a href="../Classes/EventViewController.html#/s:14SEEventProject19EventViewControllerC012toolbarStackD0So07UIStackD0Cv">toolbarStackView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC12inputToolbarSo9UIToolbarCv"></a>
+                    <a name="//apple_ref/swift/Property/inputToolbar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC12inputToolbarSo9UIToolbarCv">inputToolbar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">inputToolbar</span> <span class="o">=</span> <span class="kt">UIToolbar</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC18inputToolbarBottomSo18NSLayoutConstraintCv"></a>
+                    <a name="//apple_ref/swift/Property/inputToolbarBottom" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC18inputToolbarBottomSo18NSLayoutConstraintCv">inputToolbarBottom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">inputToolbarBottom</span> <span class="o">=</span> <span class="kt">NSLayoutConstraint</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC18inputToolbarHeightSo18NSLayoutConstraintCv"></a>
+                    <a name="//apple_ref/swift/Property/inputToolbarHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC18inputToolbarHeightSo18NSLayoutConstraintCv">inputToolbarHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">inputToolbarHeight</span> <span class="o">=</span> <span class="kt">NSLayoutConstraint</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerCAcA0C0V5event_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerCAcA0C0V5event_tcfc">init(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Structs/Event.html">Event</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerCACSSSg7nibName_So6BundleCSg6bundleAA0C0V5eventtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(nibName:bundle:event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerCACSSSg7nibName_So6BundleCSg6bundleAA0C0V5eventtcfc">init(nibName:bundle:event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="n">nibName</span> <span class="nv">nibNameOrNil</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">bundle</span> <span class="nv">nibBundleOrNil</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">?,</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Structs/Event.html">Event</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidAppear:">viewDidAppear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)viewDidDisappear:">viewDidDisappear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)updateViewConstraints"></a>
+                    <a name="//apple_ref/swift/Method/updateViewConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)updateViewConstraints">updateViewConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">updateViewConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC15observeMessages33_A2EB31C0C14F6B4695EACA2A42CC774ALLyyF"></a>
+                    <a name="//apple_ref/swift/Method/observeMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC15observeMessages33_A2EB31C0C14F6B4695EACA2A42CC774ALLyyF">observeMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the lastes messages and continue watching for new ones to show.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">observeMessages</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)showEventInfo"></a>
+                    <a name="//apple_ref/swift/Method/showEventInfo()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)showEventInfo">showEventInfo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action on tap of the info icon in the top right.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">showEventInfo</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)actionDidSend"></a>
+                    <a name="//apple_ref/swift/Method/actionDidSend()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)actionDidSend">actionDidSend()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates message and sends it to the event conversation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">actionDidSend</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)keyboardWillShowWithNotification:"></a>
+                    <a name="//apple_ref/swift/Method/keyboardWillShow(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)keyboardWillShowWithNotification:">keyboardWillShow(notification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens to the keyboard notification to animate the text field at the bottom to stay above the keyboard</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">keyboardWillShow</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SEEventProject@objc(cs)EventViewController(im)keyboardWillHideWithNotification:"></a>
+                    <a name="//apple_ref/swift/Method/keyboardWillHide(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SEEventProject@objc(cs)EventViewController(im)keyboardWillHideWithNotification:">keyboardWillHide(notification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens to the keyboard notification to animate the text field at the bottom to stay above the keyboard</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">keyboardWillHide</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SEEventProject19EventViewControllerC13didSelectLinky10Foundation3URLV3url_tF"></a>
+                    <a name="//apple_ref/swift/Method/didSelectLink(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SEEventProject19EventViewControllerC13didSelectLinky10Foundation3URLV3url_tF">didSelectLink(url:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didSelectLink</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SEEventProject@objc(cs)EventViewController(im)numberOfSectionsInTableView:"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SEEventProject@objc(cs)EventViewController(im)numberOfSectionsInTableView:">numberOfSections(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:numberOfRowsInSection:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:numberOfRowsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:numberOfRowsInSection:">tableView(_:numberOfRowsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:heightForRowAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:heightForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:heightForRowAtIndexPath:">tableView(_:heightForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">heightForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:cellForRowAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:cellForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SEEventProject@objc(cs)EventViewController(im)tableView:cellForRowAtIndexPath:">tableView(_:cellForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017. All Rights Reserved</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
